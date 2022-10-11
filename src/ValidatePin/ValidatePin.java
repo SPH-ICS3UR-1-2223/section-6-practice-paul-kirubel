@@ -11,8 +11,9 @@ public class ValidatePin {
    int userPin=in.nextInt();
    while (userPin!=pin) {
 	   System.out.println("Invalid Pin. Try again.");
+	   userPin=in.nextInt();
    }
-   int userPin=in.nextInt();
+   
    System.out.println("got it");
 	   }
 }
