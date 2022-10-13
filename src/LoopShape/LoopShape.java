@@ -1,16 +1,16 @@
 package LoopShape;
+class Loopshape {
+	static void createRectangle(int width, int height) {
 
-public class LoopShape {
-    
-    static void createRectangle(int width, int height){
-        //Draw a Rectangle
+	
+
     	//Top line
    for (int i=0;i<width;i++) {
 	   System.out.print("#");
    }
        System.out.println(); 
     for (int j=0; j<height-2;j++) {
-   System.out.println(" #");
+   System.out.print("#");
    for (int i = 0; i<width-2;i++) {
 	   System.out.print(" ");
    }
@@ -21,7 +21,7 @@ public class LoopShape {
    }
     }
     if ( height>1) {
-    for (int i=1;i<=width;i++) 
+    for (int i=0;i<width;i++) 
  	   System.out.print("#");
     }
  	   System.out.println();
@@ -33,11 +33,27 @@ public class LoopShape {
     //	System.out.println();
    
     	
-    	for (int i = 1;i<=leg;++i) {
-    		for (int j = 1;j<=i;++j) {	
-            System.out.print("* ");
-        	}
-    	 System.out.println();
+   	for (int i = 1;i<=leg;i++) {
+   		for (int j = 1;j<=i;j++) {
+   			if (j==1|| j==i|| i==leg ) {
+            System.out.print("*");
+        	}else {
+    	 System.out.print(" ");
     }
+
+   		}
+   
+    }
+    
+  System.out.println();  
+    
+    
+    
+   	}
+    
+
+
   }
-}
+
+
+
