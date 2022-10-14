@@ -1,5 +1,5 @@
 package LoopShape;
-class Loopshape {
+public class LoopShape {
 	static void createRectangle(int width, int height) {
 
 	
@@ -42,10 +42,10 @@ class Loopshape {
     }
 
    		}
-   
+   	 System.out.println();
     }
     
-  System.out.println();  
+   
     
     
     
